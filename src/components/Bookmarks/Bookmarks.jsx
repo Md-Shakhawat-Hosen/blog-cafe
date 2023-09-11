@@ -13,8 +13,8 @@ const Bookmarks = ({ bookMarks, marksAsRead }) => {
       </h1>
       <div className="bg-slate-400 rounded-lg p-2">
         <h1 className="font-bold mb-4">Bookmarked Blogs: {bookMarks.length}</h1>
-        {bookMarks.map((s) => (
-          <div className="bg-cyan-100 p-4 mb-3 rounded-lg" key={s.id}>
+        {bookMarks.map((s,indx) => (
+          <div className="bg-cyan-100 p-4 mb-3 rounded-lg" key={indx}>
             {s.title}
           </div>
         ))}

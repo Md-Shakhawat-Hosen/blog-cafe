@@ -19,11 +19,14 @@ function App() {
 
   }
   
-  const handleAddToMarkAsRead = (reading_time) => {
+  const handleAddToMarkAsRead = (reading_time,id) => {
         //  console.log('clicked',reading_time)
         //  const newReadTime = [...marksAsRead,reading_time]
         //  setMarkAsRead(newReadTime)
         setMarkAsRead(marksAsRead+reading_time)
+
+        const remainingBookMarks = bookMarks.filter(bookmark => bookmark.id !== id);
+        setBookMarks(remainingBookMarks)
   }
 
   return (

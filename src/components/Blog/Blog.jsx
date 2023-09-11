@@ -3,6 +3,7 @@ import { BsBookmarkStarFill } from "react-icons/bs";
 
 const Blog = ({ blog, handleAddToBookMark, handleAddToMarkAsRead }) => {
   const {
+    id,
     title,
     image,
     author_img,
@@ -48,7 +49,7 @@ const Blog = ({ blog, handleAddToBookMark, handleAddToMarkAsRead }) => {
       ))}
       <br />
       <button
-        onClick={() => handleAddToMarkAsRead(reading_time)}
+        onClick={() => handleAddToMarkAsRead(reading_time,id)}
         className="text-cyan-600 underline underline-offset-4 mb-6"
       >
         Mark as read
