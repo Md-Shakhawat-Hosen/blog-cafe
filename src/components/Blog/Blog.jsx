@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { BsBookmarkStarFill } from "react-icons/bs";
 
 const Blog = ({blog}) => {
     const {
@@ -25,10 +26,16 @@ const Blog = ({blog}) => {
             <h5>{posted_date}</h5>
           </div>
         </div>
-        <h3>
-          {" "}
-          <span>{reading_time}</span> min read
-        </h3>
+        <div className="flex items-center gap-2">
+          <h3>
+            {" "}
+            <span>{reading_time}</span> min read
+          </h3>
+          <button>
+            {" "}
+            <BsBookmarkStarFill />
+          </button>
+        </div>
       </div>
       <h1 className="font-bold text-4xl mt-4">{title}</h1>
       {hashtags.map((hash, indx) => (
@@ -39,6 +46,8 @@ const Blog = ({blog}) => {
           </a>
         </span>
       ))}
+      <p className="text-cyan-600 underline underline-offset-4 mb-6">Mark as read</p>
+      <hr className="mb-10" />
     </div>
   );
 };
