@@ -8,6 +8,7 @@ import { useState } from 'react';
 function App() {
 
   const [bookMarks, setBookMarks] = useState([]);
+  const [marksAsRead, setMarkAsRead] = useState(0);
 
   const handleAddToBookMark = (blog) => {
     // console.log('clicked bookmark');
@@ -17,6 +18,13 @@ function App() {
     // console.log(bookMarks)
 
   }
+  
+  const handleAddToMarkAsRead = (reading_time) => {
+        //  console.log('clicked',reading_time)
+        //  const newReadTime = [...marksAsRead,reading_time]
+        //  setMarkAsRead(newReadTime)
+        setMarkAsRead(marksAsRead+reading_time)
+  }
 
   return (
     <>
@@ -25,8 +33,11 @@ function App() {
       </div>
       <div className="max-w-screen-xl mx-auto px-10 py-5">
         <div className="flex">
-          <Blogs handleAddToBookMark={handleAddToBookMark}></Blogs>
-          <Bookmarks bookMarks={bookMarks}></Bookmarks>
+          <Blogs
+            handleAddToBookMark={handleAddToBookMark}
+            handleAddToMarkAsRead={handleAddToMarkAsRead}
+          ></Blogs>
+          <Bookmarks bookMarks={bookMarks} marksAsRead={marksAsRead}></Bookmarks>
         </div>
       </div>
     </>

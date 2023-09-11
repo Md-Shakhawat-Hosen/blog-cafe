@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { BsBookmarkStarFill } from "react-icons/bs";
 
-const Blog = ({ blog, handleAddToBookMark }) => {
+const Blog = ({ blog, handleAddToBookMark, handleAddToMarkAsRead }) => {
   const {
     title,
     image,
@@ -14,7 +14,7 @@ const Blog = ({ blog, handleAddToBookMark }) => {
   return (
     <div className="mb-3 mr-4">
       <img className="w-full h-[450px] rounded-lg" src={image} alt="" />
-      <div className="flex justify-between mt-8">
+      <div className="flex flex-col lg:flex-row justify-between mt-8">
         <div className="flex">
           <img
             className="w-[50px] h-[50px] rounded-full mr-6"
@@ -46,9 +46,13 @@ const Blog = ({ blog, handleAddToBookMark }) => {
           </a>
         </span>
       ))}
-      <p className="text-cyan-600 underline underline-offset-4 mb-6">
+      <br />
+      <button
+        onClick={() => handleAddToMarkAsRead(reading_time)}
+        className="text-cyan-600 underline underline-offset-4 mb-6"
+      >
         Mark as read
-      </p>
+      </button>
       <hr className="mb-10" />
     </div>
   );
@@ -60,6 +64,7 @@ const Blog = ({ blog, handleAddToBookMark }) => {
 
 Blog.propTypes = {
   blog: PropTypes.object.isRequired,
-  handleAddToBookMark: PropTypes.func.isRequired
+  handleAddToBookMark: PropTypes.func.isRequired,
+  handleAddToMarkAsRead: PropTypes.func.isRequired
 };
 export default Blog;
