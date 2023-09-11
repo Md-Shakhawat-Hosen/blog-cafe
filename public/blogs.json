@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "title": "Exploring the hidden wonders of the Amazon Rainforest",
+    "image": "https://i.ibb.co/q7nqDwD/beautiful-old-tree-grown-edge-rock-with-amazing-clouds-side-sunlight.jpg",
+    "author_img": "https://i.ibb.co/FhQF77C/classic-portrait-silhouette-man.jpg",
+    "author_name": "Mr. kamal",
+    "posted_date": "September 5, 2023",
+    "reading_time": 12,
+    "hashtags": ["#AmazonRainforest", "#NatureExploration", "#Adventure"]
+  },
+  {
+    "id": 2,
+    "title": "The art of gourmet cooking: A culinary journey",
+    "image": "https://i.ibb.co/PcprW3T/beautiful-scenery-rock-formations-by-sea-queens-bath-kauai-hawaii-sunset.jpg",
+    "author_img": "https://i.ibb.co/JpQ3kCw/profile-shot-candid-blond-girl-smiling-happy-looking-standing-tshirt-white-copy-space.jpg",
+    "author_name": "Mr. jhon",
+    "posted_date": "August 20, 2023",
+    "reading_time": 8,
+    "hashtags": ["#CulinaryArt", "#GourmetCooking", "#Foodie"]
+  },
+  {
+    "id": 3,
+    "title": "Space Odyssey: A voyage to the stars",
+    "image": "https://i.ibb.co/TmfMxN3/beautiful-view-greenery-bridge-forest-perfect-background.jpg",
+    "author_img": "https://i.ibb.co/wMz2YJB/successful-businesswoman-with-long-hair-wearing-white-shirt.jpg",
+    "author_name": "Tony jhon",
+    "posted_date": "July 10, 2023",
+    "reading_time": 15,
+    "hashtags": ["#SpaceExploration", "#Astronomy", "#Interstellar"]
+  },
+  {
+    "id": 4,
+    "title": "Unveiling the secrets of ancient Egypt",
+    "image": "https://i.ibb.co/bR5473j/cardano-blockchain-platform-1.jpg",
+    "author_img": "https://i.ibb.co/9rPRfXD/confident-young-handsome-man-standing-profile-view-looking-camera-crossing-arms-isolated-blue-backgr.jpg",
+    "author_name": "Teddy kamal",
+    "posted_date": "June 1, 2023",
+    "reading_time": 10,
+    "hashtags": ["#AncientEgypt", "#Archaeology", "#History"]
+  },
+  {
+    "id": 5,
+    "title": "Tech trends 2023: A glimpse into the future",
+    "image": "https://i.ibb.co/k0D3wrw/cardano-blockchain-platform.jpg",
+    "author_img": "https://i.ibb.co/wMz2YJB/successful-businesswoman-with-long-hair-wearing-white-shirt.jpg",
+    "author_name": "Mr. Bangaladesh",
+    "posted_date": "May 15, 2023",
+    "reading_time": 7,
+    "hashtags": ["#Technology", "#Innovation", "#FutureTech"]
+  }
+]
